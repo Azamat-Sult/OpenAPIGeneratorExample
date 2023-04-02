@@ -1,13 +1,13 @@
-package ru.example.OpenAPIGeneratorExample;
+package ru.example.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OpenApiGeneratorExampleApplication {
+public class ServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OpenApiGeneratorExampleApplication.class, args);
+		SpringApplication.run(ServerApplication.class, args);
 	}
 
 }
