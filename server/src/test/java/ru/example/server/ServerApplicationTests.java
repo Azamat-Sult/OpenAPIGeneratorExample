@@ -1,10 +1,10 @@
-package ru.example.OpenAPIGeneratorExample;
+package ru.example.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OpenApiGeneratorExampleApplicationTests {
+class ServerApplicationTests {
 
 	@Test
 	void contextLoads() {

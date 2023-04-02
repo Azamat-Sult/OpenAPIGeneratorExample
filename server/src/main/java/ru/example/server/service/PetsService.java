@@ -1,10 +1,10 @@
-package ru.example.OpenAPIGeneratorExample.service;
+package ru.example.server.service;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import ru.example.OpenAPIGeneratorExample.api.PetsApiDelegate;
-import ru.example.OpenAPIGeneratorExample.model.Pet;
+import ru.example.server.api.PetsApiDelegate;
+import ru.example.server.model.Pet;
 
 import java.util.ArrayList;
 import java.util.List;
