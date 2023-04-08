@@ -30,6 +30,9 @@ public class PetsService implements PetsApiDelegate {
         Pet pet3 = new Pet();
         pet3.setName("pet3");
         petList.add(pet3);
+        Pet pet4 = new Pet();
+        pet4.setName("pet4");
+        petList.add(pet4);
         return ResponseEntity.ok(petList);
     }
 
