@@ -71,7 +71,7 @@
                         </goals>
                         <configuration>
                             <inputSpec>
-                                ${basedir}/../openAPIspecification/petstore.yml
+                                ${basedir}/../openAPIspecification/petstore.yaml
                             </inputSpec>
                             <generatorName>java</generatorName>
                             <library>resttemplate</library>

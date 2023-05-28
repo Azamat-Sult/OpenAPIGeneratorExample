@@ -82,7 +82,7 @@
                         </goals>
                         <configuration>
                             <inputSpec>
-                                ${basedir}/../openAPIspecification/petstore.yml
+                                ${basedir}/../openAPIspecification/petstore.yaml
                             </inputSpec>
                             <generatorName>spring</generatorName>
                             <apiPackage>ru.example.server.api</apiPackage>
@@ -93,6 +93,14 @@
                             <configOptions>
                                 <delegatePattern>true</delegatePattern>
                             </configOptions>
+                            <typeMappings>
+                                <typeMapping>
+                                    OffsetDateTime=java.time.Instant
+                                </typeMapping>
+                            </typeMappings>
+                            <importMappings>
+                                java.time.OffsetDateTime=java.time.Instant
+                            </importMappings>
                         </configuration>
                     </execution>
                 </executions>
@@ -112,9 +120,7 @@
                             <resources>
                                 <resource>
                                     <directory>${basedir}/../openAPIspecification/</directory>
-                                    <includes>
-                                        <include>petstore.yml</include>
-                                    </includes>
+                                    <filtering>true</filtering>
                                 </resource>
                             </resources>
                         </configuration>

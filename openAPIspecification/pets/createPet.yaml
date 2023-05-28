@@ -1,0 +1,14 @@
+post:
+  summary: Create a pet
+  operationId: createPet
+  tags:
+    - pets
+  responses:
+    '201':
+      description: Null response
+    default:
+      description: unexpected error
+      content:
+        application/json:
+          schema:
+            $ref: "../../petstore.yaml#/components/schemas/Error"

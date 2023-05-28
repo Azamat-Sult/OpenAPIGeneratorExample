@@ -7,7 +7,7 @@ import ru.example.client.client.ApiClient;
 public class ApiClientConfiguration {
 
     public ApiClientConfiguration(ApiClient apiClient) {
-        apiClient.setBasePath("http://localhost:8080");
+        apiClient.setBasePath("http://localhost:8080/api/v1");
     }
 
 }
