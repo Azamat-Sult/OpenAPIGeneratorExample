@@ -1,5 +1,6 @@
 package ru.example.server.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -11,6 +12,7 @@ import ru.example.server.model.Pet;
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 @Service
 public class PetsService implements PetsApiDelegate {
 
@@ -22,6 +24,7 @@ public class PetsService implements PetsApiDelegate {
 
     @Override
     public ResponseEntity<GetAllPetsRs> getAllPets(GetAllPetsRq getAllPetsRq, Integer limit) {
+        log.info(getAllPetsRq.toString());
         List<Pet> petList = new ArrayList<>();
         Pet pet1 = new Pet();
         pet1.setName("pet1");

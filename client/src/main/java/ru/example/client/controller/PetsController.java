@@ -19,7 +19,7 @@ public class PetsController {
 
     @GetMapping(path = "/getAllPets")
     public String getPetList(Model model) {
-        model.addAttribute("petList", petsService.getAllPets());
+        model.addAttribute("petList", petsService.getAllPetsAsync());
         return "petlist";
     }
 
